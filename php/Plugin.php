@@ -30,6 +30,14 @@ class Plugin extends AbstractPlugin {
 	 */
 	public function get_languages(): array {
 		$languages = [
+			 'bash' => [
+                                'name'       => esc_html__( 'Bash / Shell', 'shiny-code' ),
+                                'codemirror' => [
+                                        'autoCloseBrackets' => true,
+                                        'matchBrackets'     => true,
+                                        'mode'          => 'shell',
+                                ],
+                        ],
 			'css'        => [
 				'name'       => esc_html__( 'CSS', 'shiny-code' ),
 				'codemirror' => [
@@ -37,7 +45,7 @@ class Plugin extends AbstractPlugin {
 					'matchBrackets'     => true,
 				],
 			],
-			
+			#Need to figure out how to include CodeMirror module
 			'python' => [
 				'name'       => esc_html__( 'Python', 'shiny-code' ),
 				'codemirror' => [
