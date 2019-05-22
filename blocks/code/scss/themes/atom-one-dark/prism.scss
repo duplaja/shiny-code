@@ -44,6 +44,8 @@ pre[class*="language-"] {
 	margin: .5em 0;
 	overflow: auto;
 	padding: 1em;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
 }
 
 :not(pre) > code[class*="language-"],
@@ -187,7 +189,8 @@ code {
 			border-right-width: 0;
 
 			> span:before {
-				color: $syntax-gutter;
+				//color: $syntax-gutter;
+				color: #FFFFFF;
 			}
 		}
 	}
