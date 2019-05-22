@@ -37,6 +37,14 @@ class Plugin extends AbstractPlugin {
 					'matchBrackets'     => true,
 				],
 			],
+			
+			'python' => [
+				'name'       => esc_html__( 'Python', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+				],
+			],
 			'html'       => [
 				'name'       => esc_html__( 'HTML', 'shiny-code' ),
 				'codemirror' => [
