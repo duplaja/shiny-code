@@ -68,3 +68,18 @@ $shiny_code
 	->register_hooks( new BlockType\Code() )
 	->register_hooks( new Provider\PrismAssets() )
 	->register_hooks( new Provider\Settings() );
+
+
+add_action( 'enqueue_block_editor_assets', function() {
+	wp_enqueue_script(
+		'codemirror-mode-python',
+		plugin_dir_url( __FILE__ ) . 'assets/js/vendor/python.js',
+	    array('wp-codemirror')
+	);
+	
+	wp_add_inline_script(
+		'codemirror-mode-python',
+		'CodeMirror = wp.CodeMirror;',
+		'before'
+	);
+}, 11 );
