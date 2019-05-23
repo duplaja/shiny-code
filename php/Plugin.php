@@ -45,14 +45,6 @@ class Plugin extends AbstractPlugin {
 					'matchBrackets'     => true,
 				],
 			],
-			#Need to figure out how to include CodeMirror module
-			'python' => [
-				'name'       => esc_html__( 'Python', 'shiny-code' ),
-				'codemirror' => [
-					'autoCloseBrackets' => true,
-					'matchBrackets'     => true,
-				],
-			],
 			'html'       => [
 				'name'       => esc_html__( 'HTML', 'shiny-code' ),
 				'codemirror' => [
@@ -62,6 +54,14 @@ class Plugin extends AbstractPlugin {
 						'bothTags' => true,
 					],
 					'mode'              => 'htmlmixed',
+				],
+			],
+			'java' => [
+				'name'       => esc_html__( 'Java', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+					'mode'				=> 'clike',
 				],
 			],
 			'javascript' => [
@@ -82,6 +82,23 @@ class Plugin extends AbstractPlugin {
 					],
 				],
 			],
+			'markdown' => [
+				'name'       => esc_html__( 'Markdown', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+					'mode'				=> 'markdown',
+				],
+			],
+			'nginx' => [
+				'name'       => esc_html__( 'nginx', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+					'mode'				=> 'nginx',
+				],
+			],
+
 			'php'        => [
 				'name'       => esc_html__( 'PHP', 'shiny-code' ),
 				'codemirror' => [
@@ -91,6 +108,30 @@ class Plugin extends AbstractPlugin {
 					'matchTags'         => [
 						'bothTags' => true,
 					],
+				],
+			],
+			'python' => [
+				'name'       => esc_html__( 'Python', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+				],
+			],
+			'jsx' => [
+				'name'       => esc_html__( 'React JSX', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+					'mode'				=> 'jsx',
+				],
+			],
+
+			'sql' => [
+				'name'       => esc_html__( 'SQL', 'shiny-code' ),
+				'codemirror' => [
+					'autoCloseBrackets' => true,
+					'matchBrackets'     => true,
+					'mode'				=> 'sql',
 				],
 			],
 		];
