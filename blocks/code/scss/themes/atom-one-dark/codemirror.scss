@@ -4,6 +4,8 @@
 .cm-s-atom-one-dark {
 	background: $syntax-bg;
 	color: $mono-1;
+	border-radius:5px;
+	border: 1px solid #FFFFFF; 
 
 	.cm-atom,
 	.cm-number,
